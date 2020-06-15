@@ -1,0 +1,67 @@
+body {
+  margin: 10vh auto;
+  min-width: 400px;
+  width: 400px;
+  text-align: center;
+  font-family: monospace;
+}
+
+h1 {
+  color: rgb(79, 68, 57);
+}
+
+#calculatorBody {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 150px;
+  max-width: 40%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid violet;
+  border-radius: 2%;
+  box-shadow: 0 3px 0px rgb(244, 203, 203),
+              0 6px 2px rgb(188, 180, 180);
+}
+
+#output {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 6px;
+  padding: 6px;
+  height: 60px;
+  color: blueviolet;
+  font-size: 1rem;
+  font-style: italic;
+  background-color: rgb(237, 171, 237);
+  border-top: 2px solid rgb(201, 145, 201);
+  border-left: 1px solid rgb(201, 145, 201);
+  text-shadow: 1px 1px 2px #3c69683d;
+}
+
+.keypad {
+  padding: 10px;
+  background-color: #ffc535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  border-top: 6px solid #ff299c;
+}
+
+.keypad div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.keypad button {
+  min-width: 10px;
+  min-height: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 0 10px;
+}
