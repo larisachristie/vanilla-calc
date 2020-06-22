@@ -3,46 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator in Vanilla JS</title>
+  <title>Calculator in Vanilla JS: classwork</title>
   <link rel="stylesheet" href="./index.css" >
 </head>
 <body>
-  <h1>Vanilla 🍨 Calc</h1>
+  <h1>Vanilla Calc</h1>
   <div id="calculatorBody">
     <div id="output">0</div>
     <div class="keypad">
       <div>
-        <button type="button" name="clear">C</button>
-        <button type="button" name="equal">=</button>
-        <button type="button" name="backspace"><-</button>
+        <button type="button" id="clear" onclick="clearDisplay()">C</button>
+        <button type="button" id="equal" onclick="equal()">=</button>
+        <button type="button" value="backspace"><-</button>
       </div>
       <div>
-        <button type="button" name="divide">/</button>
-        <button type="button" name="multiply">*</button>
-        <button type="button" name="decimal">.</button>
+        <button type="button" value="divide" onclick="divide()">/</button>
+        <button type="button" value="multiply" onclick="multiply()">*</button>
+        <button type="button" value="decimal">.</button>
       </div>
       <div>
-        <button type="button" name="add">+</button>
-        <button type="button" name="0">0</button>
-        <button type="button" name="substract">-</button>
+        <button type="button" id="add" onclick="add()">+</button>
+        <button type="button" value="0" onclick="setInput(value)">0</button>
+        <button type="button" value="substract" onclick="substract()">-</button>
       </div>
       <div>
-        <button type="button" name="1">1</button>
-        <button type="button" name="2">2</button>
-        <button type="button" name="3">3</button>
+        <button type="button" value="1" onclick="setInput(value)">1</button>
+        <button type="button" value="2" onclick="setInput(value)">2</button>
+        <button type="button" value="3" onclick="setInput(value)">3</button>
       </div>
       <div>
-        <button type="button" name="4">4</button>
-        <button type="button" name="5">5</button>
-        <button type="button" name="6">6</button>
+        <button type="button" value="4" onclick="setInput(value)">4</button>
+        <button type="button" value="5" onclick="setInput(value)">5</button>
+        <button type="button" value="6" onclick="setInput(value)">6</button>
       </div>
       <div>
-        <button type="button" name="7">7</button>
-        <button type="button" name="8">8</button>
-        <button type="button" name="9">9</button>
+        <button type="button" value="7" onclick="setInput(value)">7</button>
+        <button type="button" value="8" onclick="setInput(value)">8</button>
+        <button type="button" value="9" onclick="setInput(value)">9</button>
       </div>
     </div>
   </div>
-  <script src="./calculator.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
