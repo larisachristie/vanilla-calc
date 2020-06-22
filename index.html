@@ -12,19 +12,19 @@
     <div id="output">0</div>
     <div class="keypad">
       <div>
-        <button type="button" id="clear" onclick="clearDisplay()">C</button>
+        <!-- <button type="button" id="decimal">.</button> -->
         <button type="button" id="equal" onclick="equal()">=</button>
-        <button type="button" value="backspace"><-</button>
+        <!-- <button type="button" id="backspace"><-</button> -->
       </div>
       <div>
-        <button type="button" value="divide" onclick="divide()">/</button>
-        <button type="button" value="multiply" onclick="multiply()">*</button>
-        <button type="button" value="decimal">.</button>
+        <button type="button" id="clear" onclick="setOperator(id)">C</button>
+        <button type="button" id="divide" onclick="setOperator(id)">/</button>
+        <button type="button" id="multiply" onclick="setOperator(id)">*</button>
       </div>
       <div>
-        <button type="button" id="add" onclick="add()">+</button>
+        <button type="button" id="add" onclick="setOperator(id)">+</button>
         <button type="button" value="0" onclick="setInput(value)">0</button>
-        <button type="button" value="substract" onclick="substract()">-</button>
+        <button type="button" id="substract" onclick="setOperator(id)">-</button>
       </div>
       <div>
         <button type="button" value="1" onclick="setInput(value)">1</button>
