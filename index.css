@@ -1,13 +1,13 @@
 body {
-  margin: 10vh auto;
-  min-width: 400px;
-  width: 400px;
+  margin: 3rem auto;
+  width: 100%;
   text-align: center;
   font-family: monospace;
 }
 
 h1 {
-  color: rgb(79, 68, 57);
+  color: sandybrown;
+  font-size: 1.3rem;
 }
 
 #calculatorBody {
@@ -16,7 +16,7 @@ h1 {
   width: 150px;
   max-width: 40%;
   height: 100%;
-  margin: auto;
+  margin: 1.4rem auto;
   border: 2px solid violet;
   border-radius: 2%;
   box-shadow: 0 3px 0px rgb(244, 203, 203),

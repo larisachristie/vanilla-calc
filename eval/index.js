@@ -7,7 +7,6 @@ const equal = document.getElementById('equal');
 const regex = /[\d\-+*\/]/;
 
 keypadButtons.forEach(item => item.addEventListener('click', e => {
-  console.log("clicked on ", e.target.name);
   switch (e.target.name) {
     case "equal":
       let computedValue = eval(result.join(''));
