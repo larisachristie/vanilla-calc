@@ -77,11 +77,3 @@ const calculate = () => {
       break;
   }
 };
-
-if (equal) {
-  equal.addEventListener('click', () => {
-    if (//.test()) {
-      calculate();
-    }
-  });
-}

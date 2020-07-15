@@ -1,12 +1,13 @@
 let result = [];
 
-const keypad = document.querySelector('.keypad');
+const keypadButtons = document.querySelectorAll('.keypad button');
 const output = document.getElementById('output');
 const equal = document.getElementById('equal');
 
 const regex = /[\d\-+*\/]/;
 
-keypad.addEventListener('click', e => {
+keypadButtons.forEach(item => item.addEventListener('click', e => {
+  console.log("clicked on ", e.target.name);
   switch (e.target.name) {
     case "equal":
       let computedValue = eval(result.join(''));
@@ -34,4 +35,4 @@ keypad.addEventListener('click', e => {
       }
       break;
   }
-});
+}));
