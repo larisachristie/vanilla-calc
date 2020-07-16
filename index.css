@@ -2,13 +2,12 @@ body {
   display: grid;
   place-items: center;
   grid-template-rows: auto 1fr;
-  margin: 3rem;
   font-family: monospace;
+  margin: 0;
 }
 
 nav {
-  position: absolute;
-  top: 0;
+  margin-bottom: 1rem;
 }
 
 .nav__link_div {
@@ -16,6 +15,7 @@ nav {
   padding: 0.6rem;
   background-color: rgb(255, 231, 210);
   border: 1px dashed white;
+  border-top: none;
   box-shadow: 0 1px 0px 0px whitesmoke;
   cursor: pointer;
 }
@@ -118,13 +118,7 @@ button[name="equal"] {
 @media (min-width: 700px) {
   h1 {
     font-size: 2rem;
-  }
-  nav {
-    left: auto;
-  }
-  .nav__link_div {
-    border: 1px dashed white;
-  }
+  }s
   .nav__link_div:hover {
     box-shadow: 0 2px 2px 2px whitesmoke;
   }
