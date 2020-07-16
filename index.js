@@ -3,9 +3,9 @@ let operand2;
 let operator;
 
 const keypadButtons = document.querySelectorAll('.keypad button');
-const output = document.getElementById('output');
+const output = document.querySelector('.output');
 const equalButton = document.querySelector('[name = "equal"]');
-const clearButton = document.querySelector('[name = "clear"]');
+const clearButton = document.querySelector('[name = "reset"]');
 const backspaceButton = document.querySelector('[name = "backspace"]');
 
 const display = value => {
@@ -39,7 +39,9 @@ const setOperand = value => {
 };
 
 const setOperator = value => {
-  operator = value;
+  if (!operator) {
+    operator = value;
+  }
   display(operator);
 };
 

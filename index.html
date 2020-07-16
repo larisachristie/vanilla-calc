@@ -7,41 +7,48 @@
   <link rel="stylesheet" href="./index.css" >
 </head>
 <body>
-  <h1>Vanilla 🍨 Calc</h1>
-  <div id="calculatorBody">
-    <div id="output">0</div>
-    <div class="keypad">
-      <div>
-        <button type="button" name="clear">C</button>
-        <button type="button" name="equal">=</button>
-        <button type="button" name="backspace">B</button>
+  
+  <nav>
+    <div class="nav__link_div"><a href="https://larisachristie.github.io/vanilla-calc/" rel="noopener noreferrer">Vanilla JS</a></div>
+    <div class="nav__link_div"><a href="https://larisachristie.github.io/react-calc/" rel="noopener noreferrer">React</a></div>
+  </nav>
+  <div class="calculator_app">
+    <h1>Vanilla 🍨 Calc</h1>
+    <div class="calculatorBody">
+      <div class="output">
+        <span>0</span>
       </div>
-      <div>
-        <button type="button" name="divide">/</button>
-        <button type="button" name="multiply">*</button>
-        <button type="button" name=".">.</button>
+      <div class="keypad">
+        <div class="keypad__row">
+          <button type="button" name="equal">=</button>
+          <button type="button" name="0">0</button>
+        </div>
+        <div class="keypad__row">
+          <button type="button" name="1">1</button>
+          <button type="button" name="2">2</button>
+          <button type="button" name="3">3</button>
+          <button type="button" name="add">+</button>
+        </div>
+        <div class="keypad__row">
+          <button type="button" name="4">4</button>
+          <button type="button" name="5">5</button>
+          <button type="button" name="6">6</button>
+          <button type="button" name="substract">-</button>
+        </div>
+        <div class="keypad__row">
+          <button type="button" name="7">7</button>
+          <button type="button" name="8">8</button>
+          <button type="button" name="9">9</button>
+          <button type="button" name="multiply">*</button>
+        </div>
+        <div class="keypad__row">
+          <button type="button" name=".">.</button>
+          <button type="button" name="reset">C</button>
+          <button type="button" name="backspace">B</button>
+          <button type="button" name="divide">/</button>
+        </div>
       </div>
-      <div>
-        <button type="button" name="add">+</button>
-        <button type="button" name="0">0</button>
-        <button type="button" name="substract">-</button>
-      </div>
-      <div>
-        <button type="button" name="1">1</button>
-        <button type="button" name="2">2</button>
-        <button type="button" name="3">3</button>
-      </div>
-      <div>
-        <button type="button" name="4">4</button>
-        <button type="button" name="5">5</button>
-        <button type="button" name="6">6</button>
-      </div>
-      <div>
-        <button type="button" name="7">7</button>
-        <button type="button" name="8">8</button>
-        <button type="button" name="9">9</button>
-      </div>
-    </div>
+  </div>
   </div>
   <script src="./index.js"></script>
 </body>

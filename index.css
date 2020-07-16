@@ -1,71 +1,149 @@
 body {
-  margin: 3rem auto;
-  width: 100%;
-  text-align: center;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
+  margin: 3rem;
   font-family: monospace;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+}
+
+.nav__link_div {
+  display: inline-block;
+  padding: 0.6rem;
+  background-color: rgb(255, 231, 210);
+  border: 1px dashed white;
+  box-shadow: 0 1px 0px 0px whitesmoke;
+  cursor: pointer;
+}
+
+.nav__link_div:first-of-type * {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.nav__link_div * {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px plum;
+}
+
+.calculator_app {
+  display: inherit;
+  max-width: 80vw;
 }
 
 h1 {
   color: sandybrown;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
-#calculatorBody {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 150px;
-  max-width: 40%;
-  height: 100%;
-  margin: 1.4rem auto;
+.calculatorBody {
+  max-width: 90%;
+  margin: auto 5%;
   border: 2px solid violet;
-  border-radius: 2%;
+  border-radius: 4px;
   box-shadow: 0 3px 0px rgb(244, 203, 203),
               0 6px 2px rgb(188, 180, 180);
 }
 
-#output {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 6px;
-  padding: 6px;
-  height: 60px;
+.output {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  min-height: 3rem;
   color: blueviolet;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-style: italic;
   background-color: rgb(237, 171, 237);
   border-top: 2px solid rgb(201, 145, 201);
   border-left: 1px solid rgb(201, 145, 201);
   text-shadow: 1px 1px 2px #3c69683d;
+  text-align: right;
+}
+
+.output > span {
+  padding-top: 1rem;
 }
 
 .keypad {
-  padding: 10px;
-  background-color: #ffc535;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: stretch;
-  justify-content: center;
+  padding: 0.7rem;
+  background-color: #ffc535;
   border-top: 6px solid #ff299c;
 }
 
-.keypad div {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+.keypad__row {
+  display: inherit;
+  flex-flow: row nowrap;
 }
 
 .keypad button {
-  min-width: 10px;
-  min-height: 10px;
-  width: 20px;
-  height: 20px;
-  padding: 0 10px;
+  flex-grow: 1;
+  color: rgb(88, 73, 73);
+  cursor: pointer;
+  background-color: rgb(255, 250, 251);
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0.2rem;
+  padding: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  text-shadow: 0px 2px 1px lightgray;
+  box-shadow: 0px 1px 1px whitesmoke,
+              0px 1px 0px rgb(159, 92, 223),
+              0px 1px 0px 1px rgb(226, 226, 226),
+              0px -1px 0px 1px rgb(221, 221, 221);
 }
 
-#equal {
-  width: 100%;
+button[name="equal"] {
+  font-weight: 900;
+  color: violet;
+}
+
+.keypad__row:first-of-type > button {
+  border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+  nav {
+    left: auto;
+  }
+  .nav__link_div {
+    border: 1px dashed white;
+  }
+  .nav__link_div:hover {
+    box-shadow: 0 2px 2px 2px whitesmoke;
+  }
+  .nav__link_div > a {
+    font-size: 1.2rem;
+  }
+  .nav__link_div:hover > a {
+    color: plum;
+    text-shadow: 0px 1px 1px white;
+  }
+  .calculatorBody {
+    max-width: 16rem;
+  }
+  .keypad {
+    padding: 0.8rem;
+  }
+  .keypad button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
 }
